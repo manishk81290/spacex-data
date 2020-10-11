@@ -1,0 +1,34 @@
+<div class="col-md-12 filter-container">
+    <h5>Filters</h5>
+    <div class="col-md-12 filter">
+        <h6>Launch Year</h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-6" *ngFor="let year of filterYear">
+                    <app-filter-action [value]=year (actionSelectedFilter)="getFilterData($event)"></app-filter-action>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-12 filter">
+        <h6>Successful Launch</h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-6" *ngFor="let launch of launchLandObj">
+                    <app-filter-action [value]=launch.text [isLaunch]=true (actionSelectedFilter)="getFilterData($event)"></app-filter-action>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 filter">
+        <h6>Successful Landing</h6>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-6" *ngFor="let land of launchLandObj">
+                    <app-filter-action [value]=land.text [isLaunch]=false (actionSelectedFilter)="getFilterData($event)"></app-filter-action>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="col-md-12 img-container">
+    <img src="https://picsum.photos/500/500?random={{spacexCard.flight_number}}" class="img-fluid" alt={{spacexCard.mission_name}}>
+</div>
+<div class="col-md-12">
+    <h5 class="title">{{spacexCard.mission_name}} #{{spacexCard.flight_number}}</h5>
+</div>
+<div class="col-md-12">
+    <h5>Mission Ids</h5>
+    <ul *ngIf="spacexCard.mission_id.length>0">
+        <li *ngFor="let id of spacexCard.mission_id">{{id}}</li>
+    </ul>
+    <p *ngIf="spacexCard.mission_id.length===0">No Misson Id found!!</p>
+</div>
+<div class="col-md-12">
+    <h5>Launch Year: <span>{{spacexCard.launch_year}}</span></h5>
+</div>
+<div class="col-md-12">
+    <h5>Successful Launch: <span>{{spacexCard.launch_success}}</span></h5>
+</div>
+<div class="col-md-12">
+    <h5>Successful Landing: <span>{{(spacexCard.rocket.first_stage.cores[0].land_success)?true:false}}</span></h5>
+</div>

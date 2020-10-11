@@ -1,0 +1,5 @@
+<button *ngIf="type" (click)="filterByYear($event);isActive[i]=!isActive[i]" [ngClass]="{'active': !!isActive[i]}">{{value}}</button>
+
+<button *ngIf="!type&&isLaunch" (click)="filterByLaunch($event);isActive[i]=!isActive[i]" [ngClass]="{'active': !!isActive[i]}">{{value}}</button>
+
+<button *ngIf="!type&&!isLaunch" (click)="filterByLand($event);isActive[i]=!isActive[i]" [ngClass]="{'active': !!isActive[i]}">{{value}}</button>

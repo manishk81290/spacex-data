@@ -1,0 +1,75 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.main-container {
+    padding: 25px 50px;
+}
+
+.filter-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.filter-container .filter {
+    margin-bottom: 20px;
+}
+
+.filter-container h6 {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
+}
+
+.filter-container button {
+    width: 100%;
+    background-color: #c5e09b;
+    color: #000000;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-container button.active {
+    background-color: #7cba01;
+}
+
+.filter-container button:focus {
+    outline: none;
+}
+
+.item-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    min-height: 560px;
+}
+
+.item-card .img-container {
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.item-card h5.title {
+    color: #4b5598;
+}
+
+.item-card ul li,
+.item-card p {
+    color: #62618d;
+}
+
+.item-card h5 {
+    font-weight: bold;
+}
+
+.item-card h5 span {
+    font-weight: normal;
+    color: #62618d;
+}
