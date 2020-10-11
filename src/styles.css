@@ -73,3 +73,7 @@ body {
     font-weight: normal;
     color: #62618d;
 }
+
+.dev-name h3 {
+    text-align: center;
+}
